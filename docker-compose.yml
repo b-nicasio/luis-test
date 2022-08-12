@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  jenkins:
+    image: jenkins/jenkins
+    ports:
+      - 8080:8080
+
+  db:
+    container_name: sonarqube
+    image: sonarqube
+    ports:
+      - 9000:9000
